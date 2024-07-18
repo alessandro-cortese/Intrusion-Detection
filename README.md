@@ -1,6 +1,6 @@
 # ML_Project
 
-Machine Learning Project A.A. 2023-2024.
+Machine Learning Project A.Y. 2023-2024.
 Type of Project: **A1**.
 Dataset: 'car_prices.csv'.
 This repository contains the dataset and notebook containing the models to solve the required task.
