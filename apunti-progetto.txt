@@ -1,0 +1,25 @@
+Possibili Metriche da utilizzare:
+- accuracy;
+- error;
+- confusion matrix;
+- precision;
+- recall;
+- cohen's kappa;
+- Matthews Correlation Coefficient (MCC);
+- Heatmap della confusion matrix;
+- ROC Curve e AUC;
+- Precision-Recall Curve.
+
+Analisi del Dataset:
+- Class Imbalance Analysis:
+        - devo considerare la distribuzione delle classi (devo fare agumentation delle classi che hanno meno campioni per aumentare 
+        il risultato delle metriche? -> Faccio solo data agumentation dei dati meno comuni);
+        - analizzare come il modello si comporta con le classi meno rappresentate;
+- Error Analys:
+        - identificare i casi più frequentemente classificati in modo errato;
+        - usare le analisi per migliorare il processing o il modello;
+- Class-Wise Performance:
+        - valutare le precision, recall ed F1-score separatamente per ogni classe (questo forse, vedo se ho tempo...)
+
+A che punto sono:
+Sto facendo la scrittura della documentazione sulla parte del data agumentation, STO ALLE CONSIDERAZIONI 2.
