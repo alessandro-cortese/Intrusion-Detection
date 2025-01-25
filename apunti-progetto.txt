@@ -22,6 +22,14 @@ Analisi del Dataset:
 - Class-Wise Performance:
         - valutare le precision, recall ed F1-score separatamente per ogni classe (questo forse, vedo se ho tempo...)
 
+Modelli Utilizzati:
+        - Random Forest;
+        - K-Nearest Neighbors;
+        - XGBoost;
+        - DNN con Keras-Tuner;
+        - DNN cercando di impostare manualmente i parametri e fare un minimo di tuning degli iperparametri.
+
 A che punto sono:
 24/01 - Sto facendo la scrittura della documentazione sulla parte del data agumentation, STO ALLE CONSIDERAZIONI 2;
-25/01 - Ho fatto il Data Agumentation, devo definire le metriche e i primi modelli [16:12]
+25/01 - Ho finito il Data Agumentation, devo definire le metriche e i primi modelli [16:12]
+25/01 - Ho fatto Random Forest, devo rivedere la funzione per la valutazione [18:36]
