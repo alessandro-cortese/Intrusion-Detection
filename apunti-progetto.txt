@@ -13,7 +13,8 @@ Possibili Metriche da utilizzare:
 Analisi del Dataset:
 - Class Imbalance Analysis:
         - devo considerare la distribuzione delle classi (devo fare agumentation delle classi che hanno meno campioni per aumentare 
-        il risultato delle metriche? -> Faccio solo data agumentation dei dati meno comuni);
+          il risultato delle metriche? -> Faccio solo data agumentation dei dati meno comuni. Ho utilizzato SMOTE e RandomOversampler
+          perché SMOTE non funzionava bene con i soli esempi delle classi minoritarie delle classi minoritarie presenti nel dataset);
         - analizzare come il modello si comporta con le classi meno rappresentate;
 - Error Analys:
         - identificare i casi più frequentemente classificati in modo errato;
@@ -22,4 +23,5 @@ Analisi del Dataset:
         - valutare le precision, recall ed F1-score separatamente per ogni classe (questo forse, vedo se ho tempo...)
 
 A che punto sono:
-Sto facendo la scrittura della documentazione sulla parte del data agumentation, STO ALLE CONSIDERAZIONI 2.
+24/01 - Sto facendo la scrittura della documentazione sulla parte del data agumentation, STO ALLE CONSIDERAZIONI 2;
+25/01 - Ho fatto il Data Agumentation, devo definire le metriche e i primi modelli [16:12]
