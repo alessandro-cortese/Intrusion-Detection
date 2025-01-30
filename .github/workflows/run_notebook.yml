@@ -1,0 +1,38 @@
+name: Execute Jupyter Notebook
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install jupyter nbconvert
+
+      - name: Execute Jupyter Notebook
+        run: |
+          jupyter nbconvert --to notebook --execute intrusion_detection.ipynb --output executed_notebook.ipynb
+
+      - name: Upload executed notebook
+        uses: actions/upload-artifact@v4
+        with:
+          name: executed-notebook
+          path: executed_notebook.ipynb
